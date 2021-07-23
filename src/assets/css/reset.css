@@ -1,0 +1,6 @@
+@cahrset "utf-8";
+
+.v-application div,
+.v-application p,
+.v-application ol,
+.v-application ul{margin:0 0 0 0;padding:0 0 0 0;}
