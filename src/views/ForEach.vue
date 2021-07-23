@@ -34,7 +34,7 @@ export default {
   },
   mounted () {
     setTimeout(() => {
-      document.querySelectorAll('.status-bar').forEach((e) => { // forEach는 선택된 요소들을 배열로 만듦. el과 index는 배열에서 알아서 가져옴
+      document.querySelectorAll('.status-bar').forEach((e/*,i*/) => { // forEach는 선택된 요소들을 배열로 만듦. el과 index는 배열에서 알아서 가져옴
         console.log(document.querySelectorAll('.status-bar').length)
         e.style.width = e.getAttribute('value') + '%'
       })
