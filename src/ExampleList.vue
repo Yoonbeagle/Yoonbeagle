@@ -1,6 +1,6 @@
 <template>
   <div class="example-area">
-    <h1>Example List</h1>
+    <h1>Vue Study - Example List</h1>
     <div class="example-contents">
       <ul class="example-list">
         <template>

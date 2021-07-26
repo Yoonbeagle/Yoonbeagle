@@ -26,12 +26,12 @@ export default {
   data () {
     return {
       cardList: [
-        { title: '카드아이템 타이틀1', isFavorite: true, buttonTxt: '즐겨찾기' },
-        { title: '카드아이템 타이틀2', isFavorite: false, buttonTxt: '즐겨찾기' },
-        { title: '카드아이템 타이틀3', isFavorite: true, buttonTxt: '즐겨찾기' },
-        { title: '카드아이템 타이틀4', isFavorite: false, buttonTxt: '즐겨찾기' },
-        { title: '카드아이템 타이틀5', isFavorite: true, buttonTxt: '즐겨찾기' },
-        { title: '카드아이템 타이틀6', isFavorite: true, buttonTxt: '즐겨찾기' }
+        { title: '카드아이템 타이틀1', isFavorite: true},
+        { title: '카드아이템 타이틀2', isFavorite: false},
+        { title: '카드아이템 타이틀3', isFavorite: true},
+        { title: '카드아이템 타이틀4', isFavorite: false},
+        { title: '카드아이템 타이틀5', isFavorite: true},
+        { title: '카드아이템 타이틀6', isFavorite: true}
       ],
       isEmptyFavorite: false
     }
