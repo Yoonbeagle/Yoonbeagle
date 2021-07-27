@@ -9,13 +9,14 @@ import '@/assets/css/style.css'
 // fort-awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faHeart as fasHeart, faEye } from '@fortawesome/free-solid-svg-icons' // solid icon
+import { faHeart as fasHeart, faEye, faStar as fasStar } from '@fortawesome/free-solid-svg-icons' // solid icon
 import { faHeart as farHeart } from '@fortawesome/free-regular-svg-icons' // regular icon
 
 library.add(
   fasHeart,
   farHeart,
-  faEye
+  faEye,
+  fasStar
 )
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 // Vue.config.productionTip = false

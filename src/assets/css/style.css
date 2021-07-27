@@ -155,8 +155,9 @@ ul li a{display:block;width:100%;padding:6px 10px 0;border-bottom:1px solid navy
 .props-emit-wapper h2{margin-bottom:10px;}
 .card-wrapper{display:flex;flex-wrap:nowrap;align-items:center;margin-bottom:20px !important;}
 .card-item{width:150px;height:150px;flex:0 0 150px;margin:0 10px !important;padding:40px 0 !important;border:1px solid #ddd;text-align:center;}
-.btn-favor{display:block;width:84px;height:26px;margin:10px auto 0;border:1px solid #ddd;border-radius:13px;font-size:14px;line-height:26px;font-size:12px;}
-.btn-favor.selected{background:#1976d2;color:#fff;}
-.btn-favor:hover{background:#eee;}
-.btn-favor.selected:hover{background:#00a6d2;}
+.btn-favor{display:block;/*width:84px;height:26px;margin:10px auto 0;border:1px solid #ddd;border-radius:13px;*/line-height:26px;font-size:24px;margin:0 auto;color:#ddd;}
+.btn-favor.selected{/*background:#1976d2;color:#fff;*/color:#1976d2;}
+.btn-favor:hover{color:#eee;}
+.btn-favor.selected:hover{/*background:#00a6d2;*/color:#00a6d2;}
+.btn-favor span{text-indent:-9999px;width:0;height:0;font-size:0;}
 .no-data{width:100%;height:150px;display:flex;align-items:center;justify-content:center;border:1px solid #ddd;text-align:center;}

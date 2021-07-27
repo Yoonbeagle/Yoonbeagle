@@ -50,11 +50,11 @@ export default {
         title: this.title,
         contents: this.contents,
         date: this.date
-      })
-      console.log('aaa')
+      });
+      console.log('aaa');
       this.$router.push({
         path: '/boardList'
-      })
+      });
     }
   }
 }

@@ -2,10 +2,16 @@
     <div class="card-item" v-if="mode=='all'||mode=='favorite'&&info.isFavorite">
         {{ info.title }}<br>{{ info.isFavorite }}
         <template v-if="info.isFavorite">
-        <button class="btn-favor" :class="info.isFavorite?'selected':''" @click.stop="toggleFavorite()">{{ buttonTxtCancel }}</button>
+            <button class="btn-favor" :class="info.isFavorite?'selected':''" @click.stop="toggleFavorite()">
+                <font-awesome-icon :icon="['fas','star']" />
+                <span>{{ buttonTxtCancel }}</span>
+            </button>
         </template>
         <template v-else>
-        <button class="btn-favor" :class="info.isFavorite?'selected':''" @click.stop="toggleFavorite()">{{ buttonTxtAdd }}</button>
+            <button class="btn-favor" :class="info.isFavorite?'selected':''" @click.stop="toggleFavorite()">
+                <font-awesome-icon :icon="['fas','star']" />
+                <span>{{ buttonTxtAdd }}</span>
+            </button>
         </template>
     </div>
 </template>
