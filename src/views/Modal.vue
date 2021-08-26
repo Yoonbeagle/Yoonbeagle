@@ -48,6 +48,8 @@ export default {
 
 <style scoped lang="scss">
   .second{
-    &-area{margin-top:20px;}
+    &-area{margin-top:20px;
+      button{margin-bottom:10px;}
+    }
   }
 </style>
