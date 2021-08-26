@@ -7,22 +7,34 @@
     <layer-popup
       :pop-open="popOpen"
       @closeAll="subPopOpen = false" />
+
+    <div class="second-area">
+      <v-btn
+        color="primary"
+        @click="onClickPopup">테스트 팝업 열기</v-btn>
+
+      <modify-popup ref="ModifyPopup" />
+    </div>
   </div>
 </template>
 
 <script>
 import { EventBus } from '@/event-bus'
 import LayerPopup from '@/views/popup/LayerPopup'
+import ModifyPopup from '@/views/popup/ModifyPopup'
 
 export default {
   name: 'Modal',
-  components: { LayerPopup },
+  components: { LayerPopup, ModifyPopup },
   data () {
     return {
       popOpen: false
     }
   },
   methods: {
+    onclickPopup() {
+      this.$refs['ModifyPopup'].open();
+    }
   },
   created () {
     EventBus.$on('close-all', closeAll => {
@@ -34,6 +46,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+  .second{
+    &-area{margin-top:20px;}
+  }
 </style>
