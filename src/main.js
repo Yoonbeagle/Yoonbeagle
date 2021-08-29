@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import 'vuetify/dist/vuetify.min.css'
-import '@/assets/css/style.css'
+import '@/assets/css/style.scss'
 
 // fort-awesome
 import { library } from '@fortawesome/fontawesome-svg-core'

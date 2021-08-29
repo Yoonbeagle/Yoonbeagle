@@ -9,6 +9,8 @@
       @closeAll="subPopOpen = false" />
 
     <div class="second-area">
+      <p>* 팝업 open(), close() 테스트</p>
+
       <v-btn
         color="primary"
         @click="onClickPopup">테스트 팝업 열기</v-btn>
