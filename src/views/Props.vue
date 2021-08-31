@@ -21,38 +21,38 @@
 import cardItem from './CardItem'
 
 export default {
-  name: 'Props',
-  components: { cardItem },
-  data () {
-    return {
-      cardList: [
-        { title: '카드아이템 타이틀1', isFavorite: true},
-        { title: '카드아이템 타이틀2', isFavorite: false},
-        { title: '카드아이템 타이틀3', isFavorite: true},
-        { title: '카드아이템 타이틀4', isFavorite: false},
-        { title: '카드아이템 타이틀5', isFavorite: true},
-        { title: '카드아이템 타이틀6', isFavorite: true}
-      ],
-      isEmptyFavorite: false
-    }
-  },
-  methods: {
-    checkFavorite () {
-      let count = 0
-      for (let i = 0; i < this.cardList.length; i++) {
-        if (!this.cardList[i].isFavorite) {
-          count++
+    name: 'Props',
+    components: { cardItem },
+    data () {
+        return {
+            cardList: [
+                { title: '카드아이템 타이틀1', isFavorite: true},
+                { title: '카드아이템 타이틀2', isFavorite: false},
+                { title: '카드아이템 타이틀3', isFavorite: true},
+                { title: '카드아이템 타이틀4', isFavorite: false},
+                { title: '카드아이템 타이틀5', isFavorite: true},
+                { title: '카드아이템 타이틀6', isFavorite: true}
+            ],
+            isEmptyFavorite: false
         }
-      }
+    },
+    methods: {
+        checkFavorite () {
+            let count = 0
+            for (let i = 0; i < this.cardList.length; i++) {
+                if (!this.cardList[i].isFavorite) {
+                    count++
+                }
+            }
 
-      // console.log(count + ',' + this.cardList.length)
+            // console.log(count + ',' + this.cardList.length)
 
-      if (count === this.cardList.length) {
-        this.isEmptyFavorite = true
-      } else {
-        this.isEmptyFavorite = false
-      }
+            if (count === this.cardList.length) {
+                this.isEmptyFavorite = true
+            } else {
+                this.isEmptyFavorite = false
+            }
+        }
     }
-  }
 }
 </script>
