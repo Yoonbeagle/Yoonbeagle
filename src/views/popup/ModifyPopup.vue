@@ -3,7 +3,7 @@
         <div class="modal-container">
             <div class="modal-body">
                 <div>테스트 팝업</div>
-                <v-btn color="cancel" @click="close">닫기</v-btn>
+                <v-btn color="cancel" @click="$emit('close-popup')">닫기</v-btn>
             </div>
         </div>
     </div>
@@ -18,12 +18,7 @@ export default {
         }
     },
     methods: {
-        open() {
-            this.$refs['ModifyPopup'].open();
-        },
-        close() {
-            this.$refs['ModifyPopup'].close();
-        }
+        
     }
 
 }

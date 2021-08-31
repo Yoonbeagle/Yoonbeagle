@@ -137,7 +137,7 @@ ul li a{display:block;width:100%;padding:6px 10px 0;border-bottom:1px solid navy
 .v-dialog .pop-container{padding:20px;}
 .v-dialog .pop-footer{position:sticky;left:0;right:0;bottom:0;padding:10px 20px 20px;text-align:right;}
 .v-dialog .pop-footer button{margin-left:10px;}
-.modal-wrapper{display:none;position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,0.3);}
+.modal-wrapper{position:absolute;left:0;right:0;top:0;bottom:0;background:rgba(0,0,0,0.3);}
 .modal-container{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);width:300px;height:auto;margin:auto;padding:20px;background:#fff;
     .v-btn{display:block;margin:10px auto 0;}
 }
