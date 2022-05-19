@@ -16,7 +16,7 @@
             :key="index">
             <em>-</em>
             <a
-              :href="item.url"
+              :href="'.'+item.url"
               :class="'menu_' + index"
               target="_blank">{{ item.tit }}</a>
               <span

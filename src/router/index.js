@@ -94,7 +94,7 @@ const routes = [
     component: Example
   },
   {
-    path: './clickToggle',
+    path: '/clickToggle',
     name: 'ClickEvt',
     component: ClickEvt
   },
