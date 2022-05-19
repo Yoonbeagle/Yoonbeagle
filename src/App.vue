@@ -1,18 +1,18 @@
 <template>
   <v-app id="app">
-    <hello-world></hello-world>
+    <!-- <hello-world></hello-world> -->
     <router-view />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+//import HelloWorld from './components/HelloWorld'
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld
+    //HelloWorld
   },
 
   data () {
