@@ -2,12 +2,14 @@
   <div class="example-area">
     <h1>Vue Study - Example List</h1>
     <div class="example-contents">
+      <!-- <router-view/> -->
       <ul class="example-list">
         <template>
           <li class="none">
             <em>-</em>children routes 사용법
             <span>: index.js에 1depth 등록하고, children: [{}] 으로 2depth 컴포넌트 등록</span>
             <span>: 이 때, path에는 / 없이 2depth만 입력(1depth에 등록한 path를 상속받음)</span>
+            <span>: parent 컴포넌트에서 router-view로 삽입</span>
           </li>
         </template>
         <template>
@@ -15,16 +17,16 @@
             v-for="(item, index) in exList"
             :key="index">
             <em>-</em>
-            <a
-              :href="'.'+item.url"
+            <!-- <a
+              :href="'vue-study'+item.url"
               :class="'menu_' + index"
-              target="_blank">{{ item.tit }}</a>
+              target="_blank">{{ item.tit }}</a> -->
+              <router-link :to="subUrl+item.url" :class="'menu_' + index">{{ item.tit }}</router-link>
               <span
                 class="menu_desc">: {{ item.desc }} (url : {{ item.url }})</span>
           </li>
         </template>
       </ul>
-      <!-- <router-view /> -->
     </div>
     <v-btn
       color="cyan"
@@ -36,9 +38,10 @@
 
 <script>
 export default {
-  name: 'Example',
+  name: 'ExampleList',
   data () {
     return {
+      subUrl: 'vue-study',
       exList: [
         {
           url: '/clickToggle',
