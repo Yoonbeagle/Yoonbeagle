@@ -23,7 +23,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
   {
-    path: '/vue-study',
+    path: '/',
     name: 'Main',
     component: ExampleList
   },
