@@ -21,7 +21,7 @@
               :href="'vue-study'+item.url"
               :class="'menu_' + index"
               target="_blank">{{ item.tit }}</a> -->
-              <router-link :to="subUrl+item.url" :class="'menu_' + index" target="_blank">{{ item.tit }}</router-link>
+              <router-link :to="subUrl+item.url" :class="'menu_' + index">{{ item.tit }}</router-link>
               <span
                 class="menu_desc">: {{ item.desc }} (url : {{ item.url }})</span>
           </li>
