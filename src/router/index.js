@@ -28,7 +28,7 @@ const routes = [
     component: ExampleList
   },
   {
-    path: '/vue-study',
+    path: '/ex',
     name: 'vue-study',
     component: Example,
     children: [

@@ -41,7 +41,7 @@ export default {
   name: 'ExampleList',
   data () {
     return {
-      subUrl: 'vue-study',
+      subUrl: 'ex',
       exList: [
         {
           url: '/clickToggle',
